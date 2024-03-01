@@ -7,4 +7,4 @@ const Home = () => {
   )
 }
 
-export default pHomeage
+export default Home

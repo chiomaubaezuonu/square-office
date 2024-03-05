@@ -67,11 +67,11 @@ const Home = () => {
         <p>View All</p>
       </div>
       <div>
-        <div className='flex w-full px-36 gap-3'>
+        <div className='flex w-[53rem] px-36 gap-3'>
           <div className='bg-stone-900 text-white flex items-center'><h2 className='font-semibold -rotate-90 text-3xl'>Gallery</h2></div>
           <div className='flex flex-col'>
             <div className='flex gap-4'>
-              <Image style={{ width: '35vw' }} src={picture1} alt='gallery-picture1' />
+              <Image  src={picture1} alt='gallery-picture1' />
               <Image src={picture2} alt='gallery-picture2' />
               <Image src={picture3} alt='gallery-picture3' />
               <Image src={picture4} alt='gallery-picture4' />

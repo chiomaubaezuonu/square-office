@@ -1,4 +1,4 @@
-
+import "./App.css"
 import Image from 'next/image'
 import React from 'react'
 import arrow from "./images/down-arrow.svg"
@@ -14,7 +14,12 @@ import picture5 from "./images/Picture5.png"
 import picture6 from "./images/Picture6.jpg"
 import picture7 from "./images/Picture7.jpg"
 import picture8 from "./images/Picture8.jpg"
-
+import cyber from "./images/cyber234.jpg"
+import digit from "./images/9thdigit.png"
+import aart from "./images/aart.png"
+import sycamore from "./images/sycamore.png"
+// import lsetf from "../../../public/lsetf.png"
+import lsetf from "../public/lsetf.png"
 
 
 type FeatureCard = {
@@ -27,7 +32,7 @@ type FeatureCard = {
 const Home = () => {
   return (
     <div>
-      <div className='bg-black text-white flex flex-col items-center justify-center p-28 '>
+      <div className='landingPage bg-black text-white flex flex-col items-center justify-center p-28 '>
         <main className='py-20'>
           <h1 className='text-4xl md:text-6xl text-center font-bold font-serif'> Welcome To The Square</h1>
           <p className='md:text-xl mt-2 text-center'>Elevate your workspace, amplify your success.</p>
@@ -66,24 +71,37 @@ const Home = () => {
         <Image src={rightArrow} width={15} alt='right-arrow' />
         <p>View All</p>
       </div>
-      <div>
-        <div className='flex w-[53rem] px-36 gap-3'>
-          <div className='bg-stone-900 text-white flex items-center'><h2 className='font-semibold -rotate-90 text-3xl'>Gallery</h2></div>
+      <div className="mt-6 mb-12 w-full">
+        <div className='flex gap-2 justify-center'>
+          <div className='bg-stone-900 text-white flex items-center'><h2 className='font-semibold -rotate-90 text-3xl px-4'>Gallery</h2></div>
           <div className='flex flex-col'>
-            <div className='flex gap-4'>
-              <Image  src={picture1} alt='gallery-picture1' />
-              <Image src={picture2} alt='gallery-picture2' />
-              <Image src={picture3} alt='gallery-picture3' />
-              <Image src={picture4} alt='gallery-picture4' />
+            <div className='flex gap-2 h-[198.5px] mb-2'>
+              <Image className="w-full h-full  object-contain" src={picture1} alt='gallery-picture1' />
+              <Image className="w-full h-full object-contain" src={picture2} alt='gallery-picture2' />
+              <Image className="w-full h-full object-contain" src={picture3} alt='gallery-picture3' />
+              <Image className="w-full h-full object-contain" src={picture4} alt='gallery-picture4' />
             </div>
-            <div className='flex'>
-              <Image src={picture5} alt='gallery-picture5' />
-              <Image src={picture6} alt='gallery-picture6' />
-              <Image src={picture7} alt='gallery-picture7' />
-              <Image src={picture8} alt='gallery-picture8' />
+            <div className='flex gap-2 h-[198.5px]'>
+              <Image className="w-full h-full object-contain" src={picture5} alt='gallery-picture5' />
+              <Image className="w-full h-full object-contain" src={picture6} alt='gallery-picture6' />
+              <Image className="w-full h-full object-contain" src={picture7} alt='gallery-picture7' />
+              <Image className="w-full h-full object-contain" src={picture8} alt='gallery-picture8' />
             </div>
           </div>
         </div>
+      </div>
+
+      {/* partner-Section */}
+      <div className="p-4 mt-6 shadow">
+        <p className='text-center mt-10 text-lg font-semibold'>Our Members</p>
+        <div className='flex justify-around w-full mx-auto'>
+          <Image className="w-36 object-contain" src={cyber} alt='cyber234' />
+          <Image className="w-36 object-contain" src={digit} alt="9thdigit" />
+          <Image className="w-36 object-contain" src={aart} alt='arrt' />
+          <Image className="w-36 object-contain" src={sycamore} alt='sycamore' />
+        </div>
+        <p className='text-center mb-0'> Our Partner</p>
+        <Image src={lsetf} alt="lsetf" className='mx-auto mt-1 pt-1 w-36' />
       </div>
     </div>
   )

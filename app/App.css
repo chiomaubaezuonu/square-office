@@ -3,3 +3,14 @@
     width: 4rem;
     object-fit: cover;
 } */
+.landingPage{
+    background-image: url('https://thesquareoffices.com/storage/images/stock-bg.jpg');
+    position: absolute;
+    width: 100%;
+}
+.aboutBgImg{
+    background-image: url('https://thesquareoffices.com/storage/images/about-the-square.jpg');
+    position: absolute;
+    width: 100%;
+    /* background-size: cover; */
+}

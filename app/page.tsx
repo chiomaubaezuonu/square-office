@@ -31,8 +31,8 @@ type FeatureCard = {
 
 const Home = () => {
   return (
-    <div>
-      <div className='landingPage bg-black text-white flex flex-col items-center justify-center p-28 '>
+    <div className="relative">
+      <div className='landingPage bg-cover bg-black text-white flex flex-col items-center justify-center p-28 '>
         <main className='py-20'>
           <h1 className='text-4xl md:text-6xl text-center font-bold font-serif'> Welcome To The Square</h1>
           <p className='md:text-xl mt-2 text-center'>Elevate your workspace, amplify your success.</p>

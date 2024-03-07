@@ -21,9 +21,9 @@ const Navbar = () => {
             <ul className="flex items-center text-white gap-4 font-semibold text-base mr-7">
               <li><Link href="/"> Home</Link></li>
               <li><Link href="/about"> About Us</Link></li>
-              <li className='text-yellow-500'><Link href="/">Services</Link></li>
+              <li className='text-yellow-500'><Link href="/services">Services</Link></li>
               <li><Link href="/"> Plans & Pricing</Link></li>
-              <li className='bg-yellow-500 hover:bg-yellow-400 py-2  px-3 text-black'><Link className='flex' href="/"> Book A Tour <Image src={arrow} className='ml-2' width={15} alt="arrow" /></Link></li>
+              <li className='bg-yellow-500 hover:bg-yellow-400 py-2  px-3 text-black'><Link className='flex' href="/tourForm"> Book A Tour <Image src={arrow} className='ml-2' width={15} alt="arrow" /></Link></li>
             </ul>
           </div>
         </div>
